@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdbool.h>
+#include<stdlib.h>
+
+intsolution(intn) {
+
+longlong ALL = 1;
+for (inti = n + 2; i<= 2 * n; i++) {
+        ALL *= i;
+    }
+
+longlongun_normal = 1;
+for (inti = 1; i<= n; i++) {
+un_normal *= i;
+    }
+
+int normal = ALL / un_normal;
+return normal;
+}
+
+voidmain() {
+int answer1 = solution(2);
+int answer2 = solution(3);
+int answer3 = solution(5);
+printf("올바른괄호의개수: %d\n", answer1);
+printf("올바른괄호의개수: %d\n", answer2);
+printf("올바른괄호의개수: %d\n", answer3);
